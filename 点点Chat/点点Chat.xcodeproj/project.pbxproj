@@ -26,6 +26,7 @@
 		01EF9D251C12CCFC0004E740 /* ZLSwipeableViewMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D1A1C12CCFB0004E740 /* ZLSwipeableViewMovement.m */; };
 		01EF9D261C12CCFC0004E740 /* ZLSwipeableViewSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D1C1C12CCFB0004E740 /* ZLSwipeableViewSwipeOptions.m */; };
 		01EF9D291C12D3C10004E740 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D281C12D3C10004E740 /* CardView.m */; };
+		80166AE600F13EBF914C0E3E /* libPods-点点Chat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81DA3FD87BA86FF60EC43E8 /* libPods-点点Chat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,9 @@
 		01EF9D1C1C12CCFB0004E740 /* ZLSwipeableViewSwipeOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableViewSwipeOptions.m; sourceTree = "<group>"; };
 		01EF9D271C12D3C10004E740 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		01EF9D281C12D3C10004E740 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		6DEFD7B329AAC10720EA0ED5 /* Pods-点点Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-点点Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		84CD2FCFFF5E6EBD986C679A /* Pods-点点Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-点点Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat.release.xcconfig"; sourceTree = "<group>"; };
+		E81DA3FD87BA86FF60EC43E8 /* libPods-点点Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-点点Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80166AE600F13EBF914C0E3E /* libPods-点点Chat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,8 @@
 				01EF9CEE1C12730E0004E740 /* 点点ChatTests */,
 				01EF9CF91C12730E0004E740 /* 点点ChatUITests */,
 				01EF9CD31C12730E0004E740 /* Products */,
+				9A237BFBBDE951E23390C0B3 /* Pods */,
+				B8D1BE9A14EBE6A60B84A0FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +210,23 @@
 			path = ZLSwipeableView;
 			sourceTree = "<group>";
 		};
+		9A237BFBBDE951E23390C0B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DEFD7B329AAC10720EA0ED5 /* Pods-点点Chat.debug.xcconfig */,
+				84CD2FCFFF5E6EBD986C679A /* Pods-点点Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8D1BE9A14EBE6A60B84A0FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81DA3FD87BA86FF60EC43E8 /* libPods-点点Chat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01EF9CFF1C12730E0004E740 /* Build configuration list for PBXNativeTarget "点点Chat" */;
 			buildPhases = (
+				DEBF3D9843D83AF244A21EA8 /* Check Pods Manifest.lock */,
 				01EF9CCE1C12730E0004E740 /* Sources */,
 				01EF9CCF1C12730E0004E740 /* Frameworks */,
 				01EF9CD01C12730E0004E740 /* Resources */,
+				FD5BBC941B69958F22EF8080 /* Embed Pods Frameworks */,
+				CD0115A43F5DA9F8DBA2E387 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,6 +357,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD0115A43F5DA9F8DBA2E387 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEBF3D9843D83AF244A21EA8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5BBC941B69958F22EF8080 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01EF9CCE1C12730E0004E740 /* Sources */ = {
@@ -486,6 +561,7 @@
 		};
 		01EF9D001C12730E0004E740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEFD7B329AAC10720EA0ED5 /* Pods-点点Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "点点Chat/Info.plist";
@@ -497,6 +573,7 @@
 		};
 		01EF9D011C12730E0004E740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CD2FCFFF5E6EBD986C679A /* Pods-点点Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "点点Chat/Info.plist";
@@ -573,6 +650,7 @@
 				01EF9D011C12730E0004E740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01EF9D021C12730E0004E740 /* Build configuration list for PBXNativeTarget "点点ChatTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +659,7 @@
 				01EF9D041C12730E0004E740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01EF9D051C12730E0004E740 /* Build configuration list for PBXNativeTarget "点点ChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +668,7 @@
 				01EF9D071C12730E0004E740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

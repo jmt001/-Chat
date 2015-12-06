@@ -1,0 +1,5 @@
+xcodeproj ‘path/to/Users/jiuxiaoming/Documents/GIT/点点Chat/点点Chat/点点Chat.xcodeproj'
+source ‘github.com/CocoaPods/Specs.git'
+platform :iOS, ‘7.0’#手机的系统
+pod ‘AMap2DMap’ #2D地图SDK
+pod ‘AMapSearch’ #搜索服务SDK

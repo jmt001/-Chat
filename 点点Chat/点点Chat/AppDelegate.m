@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <MAMapKit/MAAnnotation.h>
 
 @interface AppDelegate ()
 
