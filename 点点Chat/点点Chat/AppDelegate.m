@@ -8,132 +8,18 @@
 
 #import "AppDelegate.h"
 #import <MAMapKit/MAAnnotation.h>
-#import "JVFloatingDrawerSpringAnimator.h"
-static NSString * const kJVDrawersStoryboardName = @"Main";
-static NSString * const kJVLeftDrawerStoryboardID = @"JVLeftDrawerViewControllerStoryboardID";
-static NSString * const kJVRightDrawerStoryboardID = @"JVRightDrawerViewControllerStoryboardID";
-static NSString * const MainVcStoryboardId = @"main";
-static NSString * const kJVGitHubProjectPageViewControllerStoryboardID = @"JVGitHubProjectPageViewControllerStoryboardID";
-@interface AppDelegate ()
 
-@property (nonatomic, strong, readonly) UIStoryboard *drawersStoryboard;
+@interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-@synthesize drawersStoryboard = _drawersStoryboard;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.drawerViewController;
-    [self configureDrawerViewController];
-    
-    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
     return YES;
-    
 }
-/**
- 这里是跳到侧边栏的第二个选项！
- */
-- (UIViewController *)githubViewController {
-    if (!_githubViewController) {
-        _githubViewController = [self.drawersStoryboard instantiateViewControllerWithIdentifier:kJVGitHubProjectPageViewControllerStoryboardID];
-    }
-    
-    return _githubViewController;
-}
-/**
- 侧边栏控制器
- */
-- (JVFloatingDrawerViewController *)drawerViewController {
-    if (!_drawerViewController) {
-        _drawerViewController = [[JVFloatingDrawerViewController alloc] init];
-    }
-    return _drawerViewController;
-}
-
-/**
- window显示之前
- */
--(void)configureDrawerViewController{
-    self.drawerViewController.leftViewController = self.leftDrawerViewController;
-    self.drawerViewController.rightViewController = self.rightDrawerViewController;
-    //这里是主页VC
-    self.drawerViewController.centerViewController = self.mainVC;
-    self.drawerViewController.animator = self.drawerAnimator;
-    self.drawerViewController.backgroundImage = [UIImage imageNamed:@"sky"];
-}
-
-/**
-  左
- */
-- (UITableViewController *)leftDrawerViewController {
-    if (!_leftDrawerViewController) {
-        _leftDrawerViewController = [self.drawersStoryboard instantiateViewControllerWithIdentifier:kJVLeftDrawerStoryboardID];
-    }
-    
-    return _leftDrawerViewController;
-}
-/**
- 右
- */
-- (UITableViewController *)rightDrawerViewController {
-    if (!_rightDrawerViewController) {
-        _rightDrawerViewController = [self.drawersStoryboard instantiateViewControllerWithIdentifier:kJVRightDrawerStoryboardID];
-    }
-    
-    return _rightDrawerViewController;
-}
-/**
- main
- */
-- (UIViewController *)mainVC {
-    if (!_mainVC) {
-        _mainVC = [self.drawersStoryboard instantiateViewControllerWithIdentifier:MainVcStoryboardId];
-    }
-    
-    return _mainVC;
-}
-/**
- drawAnimator类型
- */
-- (JVFloatingDrawerSpringAnimator *)drawerAnimator {
-    if (!_drawerAnimator) {
-        _drawerAnimator = [[JVFloatingDrawerSpringAnimator alloc] init];
-    }
-    
-    return  (JVFloatingDrawerSpringAnimator *)_drawerAnimator;
-}
-/**
- stroyboard
- */
-- (UIStoryboard *)drawersStoryboard {
-    if(!_drawersStoryboard) {
-        _drawersStoryboard = [UIStoryboard storyboardWithName:kJVDrawersStoryboardName bundle:nil];
-    }
-    
-    return _drawersStoryboard;
-}
-
-//***<JMTbiaozhu>***   **************************   ***********************
-#pragma mark - Global Access Helper
-+ (AppDelegate *)globalDelegate {
-    return (AppDelegate *)[UIApplication sharedApplication].delegate;
-}
-
-- (void)toggleLeftDrawer:(id)sender animated:(BOOL)animated {
-    [self.drawerViewController toggleDrawerWithSide:JVFloatingDrawerSideLeft animated:animated completion:nil];
-}
-
-- (void)toggleRightDrawer:(id)sender animated:(BOOL)animated {
-    [self.drawerViewController toggleDrawerWithSide:JVFloatingDrawerSideRight animated:animated completion:nil];
-}
-//***<JMTbiaozhu>***   结尾   ***********************
-
-
-
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
