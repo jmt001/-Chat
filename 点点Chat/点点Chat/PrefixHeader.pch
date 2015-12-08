@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  点点Chat
+//
+//  Created by jiuxiaoming on 15/12/6.
+//  Copyright © 2015年 jiuxiaoming. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+
+#define PrefixHeader_pch
+#import "AppDelegate.h"
+#import "JVFloatingDrawerViewController.h"
+#import "MainViewController.h"
+
+#endif /* PrefixHeader_pch */
+//#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//
+//#endif

@@ -1,26 +1,191 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="160" y="361"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o6T-s4-ddU">
+            <objects>
+                <viewController storyboardIdentifier="JVRightDrawerViewControllerStoryboardID" id="mGB-np-nNN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2G-Zv-xbi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pg9-8i-sSn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EDd-wP-wdr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTN-lz-Flk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="361"/>
+        </scene>
+        <!--(Left) Left Drawer-->
+        <scene sceneID="T0E-b6-lmA">
+            <objects>
+                <tableViewController storyboardIdentifier="JVLeftDrawerViewControllerStoryboardID" id="Bxz-s3-gTO" userLabel="(Left) Left Drawer" customClass="JVLeftDrawerTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" sectionHeaderHeight="10" sectionFooterHeight="10" id="jt1-Rv-QMf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JVDrawerCellReuseIdentifier" id="Sc5-m0-ani" customClass="JVLeftDrawerTableViewCell">
+                                <rect key="frame" x="0.0" y="50" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sc5-m0-ani" id="xed-Rh-hdI">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G6w-E7-lWc">
+                                            <rect key="frame" x="40" y="15" width="30" height="30"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="4Ie-Tc-UKD"/>
+                                                <constraint firstAttribute="height" constant="30" id="NG2-3G-bPD"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZQ-ZO-X4V">
+                                            <rect key="frame" x="90" y="19" width="222" height="21"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="LSF-uP-wC2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="8ZQ-ZO-X4V" firstAttribute="leading" secondItem="G6w-E7-lWc" secondAttribute="trailing" constant="20" id="3bB-tt-Plk"/>
+                                        <constraint firstAttribute="centerY" secondItem="G6w-E7-lWc" secondAttribute="centerY" id="Qtp-Lc-RQ7"/>
+                                        <constraint firstItem="G6w-E7-lWc" firstAttribute="leading" secondItem="xed-Rh-hdI" secondAttribute="leadingMargin" constant="32" id="bn5-d6-kiF"/>
+                                        <constraint firstAttribute="centerY" secondItem="8ZQ-ZO-X4V" secondAttribute="centerY" constant="0.5" id="taR-Hq-MvC"/>
+                                        <constraint firstAttribute="trailing" secondItem="8ZQ-ZO-X4V" secondAttribute="trailing" constant="8" id="wG1-32-qIe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="iconImageView" destination="G6w-E7-lWc" id="NFD-4D-OL4"/>
+                                    <outlet property="titleLabel" destination="8ZQ-ZO-X4V" id="o8u-5l-Rbb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Bxz-s3-gTO" id="2XO-cO-cT7"/>
+                            <outlet property="delegate" destination="Bxz-s3-gTO" id="zgt-XX-NLc"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEA-wZ-GXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="361"/>
+        </scene>
+        <!--(Center) GitHub Project Page-->
+        <scene sceneID="qhY-rA-PRw">
+            <objects>
+                <viewController id="xH6-16-0ro" userLabel="(Center) GitHub Project Page" customClass="JVGitHubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kRl-ZK-Moo"/>
+                        <viewControllerLayoutGuide type="bottom" id="jO6-wv-aEQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AQU-le-RjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o84-1g-wdh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o84-1g-wdh" firstAttribute="top" secondItem="AQU-le-RjJ" secondAttribute="topMargin" id="8up-RG-d6u"/>
+                            <constraint firstItem="jO6-wv-aEQ" firstAttribute="top" secondItem="o84-1g-wdh" secondAttribute="bottom" id="OcY-Xs-hak"/>
+                            <constraint firstAttribute="trailing" secondItem="o84-1g-wdh" secondAttribute="trailing" id="URy-Gw-Psy"/>
+                            <constraint firstItem="o84-1g-wdh" firstAttribute="leading" secondItem="AQU-le-RjJ" secondAttribute="leading" id="rCi-5M-LHG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GitHub Project Page" id="zdh-EE-LqZ">
+                        <barButtonItem key="leftBarButtonItem" image="399-list1" id="ILv-iR-lXP" userLabel="Left Drawer Toggle Button">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="actionToggleLeftDrawer:" destination="xH6-16-0ro" id="cSe-2u-QAm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="399-list1" id="ZKm-mO-3o1" userLabel="Right Drawer Toggle Button">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="actionToggleRightDrawer:" destination="xH6-16-0ro" id="npW-vA-d8u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webview" destination="o84-1g-wdh" id="YLi-NJ-WcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihN-O5-MjB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="-451"/>
+        </scene>
+        <!--(Nav-Center) GitHub Project Page-->
+        <scene sceneID="CkK-jH-JRU">
+            <objects>
+                <navigationController storyboardIdentifier="JVGitHubProjectPageViewControllerStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="yUX-py-dhv" userLabel="(Nav-Center) GitHub Project Page" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RdM-YY-WzO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.098039215690000001" green="0.65098039220000004" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xH6-16-0ro" kind="relationship" relationship="rootViewController" id="lwv-MA-zx9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XC5-vP-epw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="-438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="399-list1" width="19" height="15"/>
+    </resources>
 </document>
