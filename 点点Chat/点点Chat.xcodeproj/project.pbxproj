@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		01EF9CD71C12730E0004E740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CD61C12730E0004E740 /* main.m */; };
 		01EF9CDA1C12730E0004E740 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CD91C12730E0004E740 /* AppDelegate.m */; };
-		01EF9CDD1C12730E0004E740 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CDC1C12730E0004E740 /* MainViewController.m */; };
+		01EF9CDD1C12730E0004E740 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CDC1C12730E0004E740 /* ViewController.m */; };
 		01EF9CE01C12730E0004E740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF9CDE1C12730E0004E740 /* Main.storyboard */; };
 		01EF9CE21C12730E0004E740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF9CE11C12730E0004E740 /* Assets.xcassets */; };
 		01EF9CE51C12730E0004E740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF9CE31C12730E0004E740 /* LaunchScreen.storyboard */; };
 		01EF9CF01C12730E0004E740 /* __ChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CEF1C12730E0004E740 /* __ChatTests.m */; };
 		01EF9CFB1C12730E0004E740 /* __ChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9CFA1C12730E0004E740 /* __ChatUITests.m */; };
+<<<<<<< HEAD
 		01EF9D1D1C12CCFC0004E740 /* DefaultDirectionInterpretor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D0A1C12CCFB0004E740 /* DefaultDirectionInterpretor.m */; };
 		01EF9D1E1C12CCFC0004E740 /* DefaultShouldSwipeDeterminator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D0C1C12CCFB0004E740 /* DefaultShouldSwipeDeterminator.m */; };
 		01EF9D1F1C12CCFC0004E740 /* DefaultViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9D0E1C12CCFB0004E740 /* DefaultViewAnimator.m */; };
@@ -34,6 +35,8 @@
 		01EF9E9F1C15975D0004E740 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9E9C1C15975D0004E740 /* FBShimmeringLayer.m */; };
 		01EF9EA01C15975D0004E740 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EF9E9E1C15975D0004E740 /* FBShimmeringView.m */; };
 		80166AE600F13EBF914C0E3E /* libPods-点点Chat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81DA3FD87BA86FF60EC43E8 /* libPods-点点Chat.a */; };
+=======
+>>>>>>> parent of 7249f13... 12.6---0:53
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +61,8 @@
 		01EF9CD61C12730E0004E740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01EF9CD81C12730E0004E740 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01EF9CD91C12730E0004E740 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		01EF9CDB1C12730E0004E740 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		01EF9CDC1C12730E0004E740 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		01EF9CDB1C12730E0004E740 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		01EF9CDC1C12730E0004E740 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		01EF9CDF1C12730E0004E740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01EF9CE11C12730E0004E740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01EF9CE41C12730E0004E740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		01EF9CF61C12730E0004E740 /* 点点ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "点点ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF9CFA1C12730E0004E740 /* __ChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __ChatUITests.m; sourceTree = "<group>"; };
 		01EF9CFC1C12730E0004E740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		01EF9D091C12CCFB0004E740 /* DefaultDirectionInterpretor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDirectionInterpretor.h; sourceTree = "<group>"; };
 		01EF9D0A1C12CCFB0004E740 /* DefaultDirectionInterpretor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultDirectionInterpretor.m; sourceTree = "<group>"; };
 		01EF9D0B1C12CCFB0004E740 /* DefaultShouldSwipeDeterminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultShouldSwipeDeterminator.h; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		6DEFD7B329AAC10720EA0ED5 /* Pods-点点Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-点点Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		84CD2FCFFF5E6EBD986C679A /* Pods-点点Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-点点Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-点点Chat/Pods-点点Chat.release.xcconfig"; sourceTree = "<group>"; };
 		E81DA3FD87BA86FF60EC43E8 /* libPods-点点Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-点点Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+>>>>>>> parent of 7249f13... 12.6---0:53
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 		01EF9CD41C12730E0004E740 /* 点点Chat */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				01EF9D081C12CCFB0004E740 /* ZLSwipeableView */,
 				01EF9D271C12D3C10004E740 /* CardView.h */,
 				01EF9D281C12D3C10004E740 /* CardView.m */,
@@ -174,6 +181,12 @@
 				01EF9CDC1C12730E0004E740 /* MainViewController.m */,
 				01EF9E4F1C14A2EF0004E740 /* left.png */,
 				01EF9E4D1C14A2E20004E740 /* right.png */,
+=======
+				01EF9CD81C12730E0004E740 /* AppDelegate.h */,
+				01EF9CD91C12730E0004E740 /* AppDelegate.m */,
+				01EF9CDB1C12730E0004E740 /* ViewController.h */,
+				01EF9CDC1C12730E0004E740 /* ViewController.m */,
+>>>>>>> parent of 7249f13... 12.6---0:53
 				01EF9CDE1C12730E0004E740 /* Main.storyboard */,
 				01EF9CE11C12730E0004E740 /* Assets.xcassets */,
 				01EF9E511C14A3DF0004E740 /* bg_jmt.png */,
@@ -210,6 +223,7 @@
 			path = "点点ChatUITests";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		01EF9D081C12CCFB0004E740 /* ZLSwipeableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +292,8 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> parent of 7249f13... 12.6---0:53
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -465,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				01EF9D251C12CCFC0004E740 /* ZLSwipeableViewMovement.m in Sources */,
 				01EF9D221C12CCFC0004E740 /* Utils.m in Sources */,
 				01EF9D1D1C12CCFC0004E740 /* DefaultDirectionInterpretor.m in Sources */,
@@ -481,8 +498,11 @@
 				01EF9D201C12CCFC0004E740 /* PanGestureRecognizer.m in Sources */,
 				01EF9D231C12CCFC0004E740 /* ViewManager.m in Sources */,
 				01EF9D211C12CCFC0004E740 /* Scheduler.m in Sources */,
+=======
+				01EF9CDD1C12730E0004E740 /* ViewController.m in Sources */,
+				01EF9CDA1C12730E0004E740 /* AppDelegate.m in Sources */,
+>>>>>>> parent of 7249f13... 12.6---0:53
 				01EF9CD71C12730E0004E740 /* main.m in Sources */,
-				01EF9D1F1C12CCFC0004E740 /* DefaultViewAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
